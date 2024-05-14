@@ -1,6 +1,7 @@
+# ライブラリインポート
 import sys
 
-# 標準入力
+# 引数入力
 args = sys.argv
 # 変数初期化
 sum = 0

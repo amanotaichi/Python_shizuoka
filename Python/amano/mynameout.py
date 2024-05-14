@@ -1,6 +1,7 @@
+# ライブラリインポート
 import sys
 
-# 標準入力
+# 引数入力
 args = sys.argv
 name = args[1]
 # Hello+名前の表示
