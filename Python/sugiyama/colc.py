@@ -9,4 +9,4 @@ input3 = int(args[3])
 
 plus = input1 + input2 + input3
 
-print( plus )
+print( plus, end="")
