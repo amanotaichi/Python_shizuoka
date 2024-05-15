@@ -6,5 +6,4 @@ n = int(arg[1])
 
 #n匹までひつじをカウント
 for i in range (1,n+1):
-    print("ひつじが"+ str(i) +"匹")
-    i += 1
+    print(f"ひつじが{i}匹")
