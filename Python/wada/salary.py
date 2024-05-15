@@ -8,10 +8,10 @@ from decimal import Decimal, ROUND_HALF_UP
 salary = int(arg[1])
 
 #税額の計算
-#100万円より大きいとき
+#100万円より大きいときの計算
 if salary >= 1000000:
     tax = 100000 + (salary-1000000)*0.2
-#100万円以下のとき
+#100万円以下のときの計算
 else:
     tax = salary*0.1
 
