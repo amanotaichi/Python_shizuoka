@@ -26,15 +26,16 @@ noodles = ["ラーメン", "うどん", "パスタ"]
 # カテゴリ別値下げ処理
 if cate == "果物類":
     for i in fruits:
-        price[i] = price[i] - priced
-
+        price[i] -= priced
 elif cate == "酒類":
     for i in alcohol:
-        price[i] = price[i] - priced
-
+        price[i] -= priced
 elif cate == "麺類":
     for i in noodles:
-        price[i] = price[i] - priced
+        price[i] -= priced
+else:
+    pass
+
 # 値下げ後価格が0以下の場合に１円にする
 for i in price:
     if price[i] <= 0:
