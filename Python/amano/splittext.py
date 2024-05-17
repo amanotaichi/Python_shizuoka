@@ -1,7 +1,7 @@
 import sys
 
+# 引数入力
 args = sys.argv
-# num = int(args[2])
 
 cat = args[1].split()
 
