@@ -22,10 +22,11 @@ def calc_distance(station1, station2):
 
     # 小数第2位で四捨五入
     distance = Decimal(str(distance)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
-    print(distance, end="")
+    return distance
 
 # 例外処理
 try:
-    calc_distance(first_station, second_station)
+    distance = calc_distance(first_station, second_station)
+    print(distance, end="")
 except:
     print("のぞみの停車駅を引数に設定してください", end="")
