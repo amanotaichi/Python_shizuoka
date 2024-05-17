@@ -24,3 +24,6 @@ def calcvalue(num):
 
 for num in numbers:
     calcvalue(num)
+
+# for i in range (i,len(args))
+#       calcvalue(args[i]) 
