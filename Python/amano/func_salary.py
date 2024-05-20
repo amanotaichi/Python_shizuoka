@@ -10,6 +10,7 @@ def calcsalary(under_hundred, over_hundred, salary):
         tax = ((int(salary) - 1000000) * over_hundred) + (1000000 * under_hundred)
     # 税額整数化
     tax = Decimal(tax).quantize(Decimal("0"),rounding=ROUND_HALF_UP)
+    # tax = Decimal(str(tax)).quantize(Decimal("0"),rounding=ROUND_HALF_UP)
     # 支給額計算
     result_salary = int(salary) - tax
 
