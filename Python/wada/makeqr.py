@@ -14,7 +14,7 @@ img = qrcode.make(creat_url)
 
 #相対パスを生成
 directory_path = "../../../files"
-path = os.path.join(directory_path,"file_name")
+path = os.path.join(directory_path,file_name)
 
 #pingファイルの生成
 img.save(path)
