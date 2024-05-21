@@ -13,13 +13,13 @@ DATABASE = "mysql+pymysql://{user}:{password}@{host}/{database}?charset=utf8".fo
 
 ENGINE = create_engine(
     DATABASE,
-    encoding = "utf-8",
+    # encoding = "utf-8",
     echo=True # True:実行のたびにSQLが出力
 )
 
 # Sessionの作成
 session = scoped_session(
-# ORM実行時の設定
+  # ORM実行時の設定
     sessionmaker(
         autocommit = False,
         autoflush = False,
