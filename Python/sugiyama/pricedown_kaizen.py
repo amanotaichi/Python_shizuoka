@@ -41,6 +41,7 @@ noodles = ("ラーメン", "うどん", "パスタ")   #麺類をタプルで定
 if hm_class == '果物類':
     for fruit in fruits:
         hinmoku[fruit] = hinmoku[fruit] - price_down
+
 elif hm_class == '酒類':
     for osake in alcohol:
         hinmoku[osake] = hinmoku[osake] - price_down
@@ -48,7 +49,9 @@ elif hm_class == '酒類':
 elif hm_class == '麺類':
     for noodle in noodles:
         hinmoku[noodle] = hinmoku[noodle] - price_down
+#---
 
+#for文で繰り返し判定
 for fruit in fruits:
     if hinmoku[fruit] < 1:
         hinmoku[fruit] = 1
@@ -60,6 +63,8 @@ for osake in alcohol:
 for noodle in noodles:
     if hinmoku[noodle] < 1:
         hinmoku[noodle] = 1
+#---
 
 #出力
 print(hinmoku)
+#---
