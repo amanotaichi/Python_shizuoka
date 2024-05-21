@@ -7,4 +7,7 @@ args = sys.argv
 num = int(args[1])
 #num分繰り返し
 for i in range(num):
-    print(f"\nひつじが{i+1}匹\n")
+    f = open('sheep.txt', 'a' , encoding='UTF-8')
+    f.write(f"ひつじが{i+1}匹\n")
+    f.close
+    
