@@ -18,9 +18,9 @@ r_num = 1
 
 # リストをデータベースから持ってくる
 attendnum = session.query(Attendnum).all()
-# リストの表示
-for attend in attendnum:
-    print(attend.entry_date, attend.seq, attend.adult, attend.child)
+# # リストの表示
+# for attend in attendnum:
+#     print(attend.entry_date, attend.seq, attend.adult, attend.child)
 
 # 連番の判定
 for attend in attendnum:
