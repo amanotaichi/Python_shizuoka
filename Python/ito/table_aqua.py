@@ -2,25 +2,18 @@ import sys
 from sqlalchemy import Column, String, Date, Integer, Numeric, DateTime
 from database import Base
 from database import ENGINE
+#モジュールごとのimportする記述
+args = sys.argv
 
-#テーブル：Holidayの定義
-class Holiday(Base):
-    __tablename__ = 'holiday'
-    holi_date = Column('holi_date', Date, primary_key = True)
-    holi_text = Column('holi_text', String(20))
-    
-class attendnum(Base):
-    __tablename__ = 'attendnum'
+#テーブル：aquaの定義
+class aqua(Base):
+    __tablename__ = 'aqua'
     entry_date = Column('entry_date', Date, primary_key = True)
     seq = Column('seq', Integer, primary_key = True)
     adult = Column('adult', Integer)
     child = Column('child', Integer)
-
-
+    
 def main(args):
-    """
-    メイン関数
-    """
     Base.metadata.create_all(bind=ENGINE)
 
 if __name__ == "__main__":

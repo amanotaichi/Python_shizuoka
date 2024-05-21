@@ -16,24 +16,18 @@ child_people = int(args[3])
 # 連番
 r_num = 1
 
-
 # リストをデータベースから持ってくる
 attendnum = session.query(Attendnum).all()
 # リストの表示
 for attend in attendnum:
-    print(attendnum.entry_date, attendnum.seq, attendnum.adult, attendnum.child)
+    print(attend.entry_date, attend.seq, attend.adult, attend.child)
 
 # 連番の判定
-for holiday in holidaylist:
-    if date == holiday.holi_date:
-        print("祝日料金")
-        total_price += adult_people * price[2]
-        total_price += child_people * price[3]
-        flag = 1
-        break
+for attend in attendnum:
+    if date == attend.entry_date:
+        r_num += 1
     else:
         pass
-
 
 # データベースに登録
 attendnum = Attendnum(

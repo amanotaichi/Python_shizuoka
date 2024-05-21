@@ -52,4 +52,5 @@ if flag == 0:
         total_price += adult_people * price[2]
         total_price += child_people * price[3]
 
+# 表示
 print(total_price)
