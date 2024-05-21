@@ -19,7 +19,7 @@ ENGINE = create_engine(
 
 # Sessionの作成
 session = scoped_session(
-  # ORM実行時の設定
+# ORM実行時の設定
     sessionmaker(
         autocommit = False,
         autoflush = False,
