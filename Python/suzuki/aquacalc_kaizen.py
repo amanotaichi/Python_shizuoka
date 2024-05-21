@@ -13,13 +13,9 @@ def get_day_of_week(date):
     year_str_list = date_list[0:4]
     # list型からstr型に変換
     year = int("".join(year_str_list))
-    # 日付の月の部分のみを取り出す
     month_str_list = date_list[4:6]
-    # list型からstr型に変換
     month = int("".join(month_str_list))
-    # 日付の日の部分を取り出す
     day_str_list = date_list[6:8]
-    # list型からstr型に変換
     day = int("".join(day_str_list))
 
     # str型からdate型に変換
