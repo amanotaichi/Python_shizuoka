@@ -1,7 +1,7 @@
 import sys
 arg = sys.argv
 
-#引数を変数に代入
+#引数を変数に代入する
 a = int(arg[1])
 
 #タプルに世界人口ランキングを定義
